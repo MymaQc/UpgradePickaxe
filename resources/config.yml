@@ -1,0 +1,66 @@
+#
+#  ███    █▄     ▄███████▄    ▄██████▄     ▄████████    ▄████████ ████████▄     ▄████████         ▄███████▄  ▄█   ▄████████    ▄█   ▄█▄    ▄████████ ▀████    ▐████▀    ▄████████
+#  ███    ███   ███    ███   ███    ███   ███    ███   ███    ███ ███   ▀███   ███    ███        ███    ███ ███  ███    ███   ███ ▄███▀   ███    ███   ███▌   ████▀    ███    ███
+#  ███    ███   ███    ███   ███    █▀    ███    ███   ███    ███ ███    ███   ███    █▀         ███    ███ ███▌ ███    █▀    ███▐██▀     ███    ███    ███  ▐███      ███    █▀
+#  ███    ███   ███    ███  ▄███         ▄███▄▄▄▄██▀   ███    ███ ███    ███  ▄███▄▄▄            ███    ███ ███▌ ███         ▄█████▀      ███    ███    ▀███▄███▀     ▄███▄▄▄
+#  ███    ███ ▀█████████▀  ▀▀███ ████▄  ▀▀███▀▀▀▀▀   ▀███████████ ███    ███ ▀▀███▀▀▀          ▀█████████▀  ███▌ ███        ▀▀█████▄    ▀███████████    ████▀██▄     ▀▀███▀▀▀
+#  ███    ███   ███          ███    ███ ▀███████████   ███    ███ ███    ███   ███    █▄         ███        ███  ███    █▄    ███▐██▄     ███    ███   ▐███  ▀███      ███    █▄
+#  ███    ███   ███          ███    ███   ███    ███   ███    ███ ███   ▄███   ███    ███        ███        ███  ███    ███   ███ ▀███▄   ███    ███  ▄███     ███▄    ███    ███
+#  ████████▀   ▄████▀        ████████▀    ███    ███   ███    █▀  ████████▀    ██████████       ▄████▀      █▀   ████████▀    ███   ▀█▀   ███    █▀  ████       ███▄   ██████████
+#                                         ███    ███                                                                          ▀
+
+upgrade-pickaxe:
+
+  # Liste des messages du plugin
+  message:
+    # Message quand le plugin s'active
+    enable-plugin: UpgradePickaxe a été activé avec succès !
+    # Message quand le plugin se désactive
+    disable-plugin: UpgradePickaxe a été désactivé avec succès !
+    # Message quand l'amélioration de la pioche a été effectuée avec succès
+    upgrade-success: §aVous venez d'améliorer votre pioche au niveau {level} en échange de {price}$ !
+    # Message quand un joueur éxécute la commande upgrade sans avoir une pioche dans sa main
+    not-valid-item: §cL'item que vous tenez dans votre main n'est pas améliorable.
+    # Message quand un joueur essaie d'améliorer une pioche ayant déjà atteint son niveau maximum
+    already-maxed: §cVotre pioche a déjà été amélioré au niveau maximum.
+    # Message quand un joueur essaie de casser un minerai alors qu'il ne possède pas le niveau de pioche nécessaire pour le casser
+    cannot-break-block: §cVous ne pouvez pas casser ce {block} puisque votre pioche est seulement niveau {level}.
+    # Message quand un joueur n'a pas assez d'argent pour enchanter son item.
+    no-money: §cVous ne possédez pas assez d'argent pour améliorer votre pioche.
+    # Message quand l'éxécuteur de la commande n'est pas un joueur
+    no-console: §cVous ne pouvez pas éxécuter cette commande depuis la console.
+
+  # Liste des paramètres du form d'upgrade
+  form:
+    # Titre du form
+    title: §l§2» §r§aAmélioration §l§2«
+    # Contenu du form
+    content: §l§2» §r§fSouhaitez-vous améliorer votre §a{item} §fau niveau §a{level} §fen échange de §a{price}$ §f?
+    # Texte du bouton permettant d'améliorer sa pioche
+    button-upgrade: §8Améliorer{line}§a{price}$
+    # Texte du bouton permettant d'annuler son action
+    button-cancel: §cAnnuler
+
+  # Liste des paramètres du plugin
+  settings:
+    # Liste des prix de chacun des niveaux d'améliorations
+    upgrade-price:
+      # Prix de l'amélioration vers une pioche en pierre
+      stone: 1000
+      # Prix de l'amélioration vers une pioche en fer
+      iron: 2500
+      # Prix de l'amélioration vers une pioche en diamant
+      diamond: 5000
+      # Prix de l'amélioration vers une pioche en netherite
+      netherite: 10000
+
+  # Liste des paramètres de la commande upgrade
+  command:
+    # Nom de la commande upgrade
+    name: upgrade
+    # Description de la commande upgrade
+    description: Améliorer le niveau de sa pioche
+    # Message d'usage de la commande d'upgrade
+    usage: null
+    # Aliases de la commande d'upgrade
+    aliases: []
